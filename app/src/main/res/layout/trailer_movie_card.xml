@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="300dp"
+    android:layout_height="230dp"
+    android:layout_margin="8dp"
+    card_view:cardBackgroundColor="@color/black"
+    card_view:cardCornerRadius="4dp">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/trailerVideoImg"
+            android:layout_width="0dp"
+            android:layout_height="192dp"
+            android:background="#b55555"
+            android:scaleType="fitXY"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.0"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/youtubeVideoName"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="name"
+            android:textSize="17dp"
+            android:textColor="@color/brightBrown"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.0"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/trailerVideoImg" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="82dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            card_view:layout_constraintBottom_toBottomOf="@+id/trailerVideoImg"
+            card_view:layout_constraintEnd_toEndOf="@+id/trailerVideoImg"
+            card_view:layout_constraintStart_toStartOf="@+id/trailerVideoImg"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:srcCompat="@drawable/youtubelogo" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>
